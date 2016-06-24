@@ -91,6 +91,8 @@
 		901CF0E21B6CA9FE00F6414B /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
 		908837C91B637C240063096B /* DateTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		908837CC1B637C240063096B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0595AB41D1CE15A00A6E388 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0595AB51D1CE15A00A6E388 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D935DB431B567FBD00BAA4F0 /* DTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = ../../../DateTools/DTConstants.m; sourceTree = "<group>"; };
 		F007631D18DE5F5E00A99075 /* DateToolsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateToolsViewController.h; sourceTree = "<group>"; };
 		F007631E18DE5F5E00A99075 /* DateToolsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateToolsViewController.m; sourceTree = "<group>"; };
@@ -127,7 +129,6 @@
 		F0F08DA018D9E80E00214C6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F0F08DA218D9E80E00214C6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F0F08DA618D9E80E00214C6B /* DateToolsExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DateToolsExample-Info.plist"; sourceTree = "<group>"; };
-		F0F08DA818D9E80E00214C6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F0F08DAA18D9E80E00214C6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0F08DAC18D9E80E00214C6B /* DateToolsExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DateToolsExample-Prefix.pch"; sourceTree = "<group>"; };
 		F0F08DAD18D9E80E00214C6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,7 +137,6 @@
 		F0F08DBC18D9E80E00214C6B /* DateToolsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateToolsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F08DBD18D9E80E00214C6B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F0F08DC518D9E80E00214C6B /* DateToolsExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DateToolsExampleTests-Info.plist"; sourceTree = "<group>"; };
-		F0F08DC718D9E80E00214C6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F0F08DD718D9E94F00214C6B /* NSDate+DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "../../../DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
 		F0F08DD818D9E94F00214C6B /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "../../../DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -454,7 +454,7 @@
 		F0F08D9318D9E80E00214C6B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
 				TargetAttributes = {
 					908837C81B637C240063096B = {
 						CreatedOnToolsVersion = 6.4;
@@ -469,8 +469,8 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				th,
 			);
 			mainGroup = F0F08D9218D9E80E00214C6B;
 			productRefGroup = F0F08D9C18D9E80E00214C6B /* Products */;
@@ -582,7 +582,7 @@
 		F0F08DA718D9E80E00214C6B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F0F08DA818D9E80E00214C6B /* en */,
+				A0595AB41D1CE15A00A6E388 /* th */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -590,7 +590,7 @@
 		F0F08DC618D9E80E00214C6B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F0F08DC718D9E80E00214C6B /* en */,
+				A0595AB51D1CE15A00A6E388 /* th */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -619,6 +619,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.molabo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -646,6 +647,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.molabo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -672,6 +674,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -733,6 +736,7 @@
 				GCC_PREFIX_HEADER = "DateToolsExample/DateToolsExample-Prefix.pch";
 				INFOPLIST_FILE = "DateToolsExample/DateToolsExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattyork.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -747,6 +751,7 @@
 				GCC_PREFIX_HEADER = "DateToolsExample/DateToolsExample-Prefix.pch";
 				INFOPLIST_FILE = "DateToolsExample/DateToolsExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattyork.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -768,6 +773,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "DateToolsExampleTests/DateToolsExampleTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattyork.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -786,6 +792,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DateToolsExample/DateToolsExample-Prefix.pch";
 				INFOPLIST_FILE = "DateToolsExampleTests/DateToolsExampleTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattyork.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

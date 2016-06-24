@@ -639,14 +639,14 @@
     hPrime1 = fmodf(hPrime1, [self radiansFromDegree:360]);
     hPrime2 = fmodf(hPrime2, [self radiansFromDegree:360]);
     CGFloat deltahPrime = 0;
-    if (fabsf(hPrime1 - hPrime2) <= [self radiansFromDegree:180]) {
+    if (fabs(hPrime1 - hPrime2) <= [self radiansFromDegree:180]) {
         deltahPrime = hPrime2 - hPrime1;
     }
     else {
         deltahPrime = (hPrime2 <= hPrime1) ? hPrime2 - hPrime1 + [self radiansFromDegree:360] : hPrime2 - hPrime1 - [self radiansFromDegree:360];
     }
     CGFloat deltaHPrime = 2 * sqrt(cPrime1*cPrime2) * sin(deltahPrime/2);
-    CGFloat meanHPrime = (fabsf(hPrime1 - hPrime2) <= [self radiansFromDegree:180]) ? (hPrime1 + hPrime2)/2 : (hPrime1 + hPrime2 + [self radiansFromDegree:360])/2;
+    CGFloat meanHPrime = (fabs(hPrime1 - hPrime2) <= [self radiansFromDegree:180]) ? (hPrime1 + hPrime2)/2 : (hPrime1 + hPrime2 + [self radiansFromDegree:360])/2;
     CGFloat T = 1 - 0.17*cos(meanHPrime - [self radiansFromDegree:30]) + 0.24*cos(2*meanHPrime)+0.32*cos(3*meanHPrime + [self radiansFromDegree:6]) - 0.20*cos(4*meanHPrime - [self radiansFromDegree:63]);
     sL = 1 + (0.015 * pow((meanL - 50), 2))/sqrt(20 + pow((meanL - 50), 2));
     sC = 1 + 0.045*cMeanPrime;
